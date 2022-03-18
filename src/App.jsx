@@ -1,14 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import axios from 'axios';
 import EditTaskComponent from './components/EditTask/EditTask';
 import ContainerTaskComponent from './components/ContainerTaskComponent/ContainerTaskComponent';
+import MyContext from './MyContext';
 import './components/App.scss';
 
 const App = () => {
-  const [tasks, setTasks] = useState([]);
-  const [text, setText] = useState('');
-  const [currentTask, setCurrentTask] = useState({});
+  const { tasks, setTasks, text, setText, currentTask, setCurrentTask } = useContext(MyContext)
 
   useEffect(() => {
     axios.get('http://localhost:8000/allTasks').then((res) => {

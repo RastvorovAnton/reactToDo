@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import MyContext from '../../MyContext';
 
 const EditTaskComponent = ({ task, setTasks }) => {
   const { _id, isCheck, text } = task;
-  const [inputText, setInputText] = useState(text);
   const navigate = useNavigate();
+  const { inputText, setInputText } = useContext(MyContext);
 
   const saveResultTask = () => {
     axios

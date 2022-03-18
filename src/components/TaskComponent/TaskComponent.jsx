@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
+import MyContext from '../../MyContext';
 import axios from 'axios';
 
-const TaskComponent = ({ setTasks, task, setCurrentTask, index }) => {
+const TaskComponent = ({ task, index }) => {
   const { _id, isCheck, text } = task;
   const navigate = useNavigate();
+  const { setTasks, setCurrentTask } = useContext(MyContext)
 
   const onChangeCheckbox = () => {
     axios

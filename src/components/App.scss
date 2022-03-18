@@ -1,0 +1,296 @@
+body {
+  background-color: #bbf7bb;
+  padding-bottom: 2em;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  img {
+    width: 1.5em;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5em;
+    background-color: #bbf7bb;
+    width: 100%;
+    padding-bottom: 2em;
+    position: fixed;
+
+    div {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .App-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 5em;
+      padding-bottom: 25px;
+    }
+
+    h1 {
+      display: flex;
+      justify-content: center;
+    }
+
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 10em;
+      height: 2.5em;
+      margin-top: 1em;
+      background-color: #9dffde;
+      border: 0.1em solid black;
+      border-radius: 6em;
+    }
+
+    button:hover {
+      background-color: #00dd93;
+      cursor: pointer;
+    }
+
+    input {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 14em;
+      height: 1.4em;
+    }
+  }
+}
+
+.Tasks-container {
+  margin-top: 13em;
+}
+
+.ToDoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .input-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1em;
+    padding: 1.5em;
+    border: 1px solid black;
+    border-radius: 1em;
+    background-color: #3eff3e;
+    width: 34em;
+    margin-top: 1.5em;
+  }
+
+  .input-wrapper-done {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 2em;
+    padding: 1.5em;
+    border: 1px solid black;
+    border-radius: 1em;
+    background-color: yellow;
+    width: 34em;
+    margin-top: 1.5em;
+    text-decoration: line-through;
+  }
+
+  img {
+    width: 1.5em;
+  }
+
+  p {
+    overflow-wrap: anywhere;
+    width: inherit;
+  }
+}
+
+.Task-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 5em;
+  padding: 3.5em;
+  border: 1px solid black;
+  border-radius: 1em;
+  background-color: #3eff3e;
+  width: 32em;
+  margin-top: 1.5em;
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row;
+  }
+}
+
+.EditTask {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2em;
+  padding: 1.5em;
+  border: 1px solid black;
+  border-radius: 1em;
+  background-color: #3eff3e;
+  width: 26em;
+  height: 7em;
+  margin-top: 22em;
+
+  input {
+    width: 20em;
+    height: 3em;
+  }
+}
+
+@media screen and (max-width: 603px) {
+  .ToDoContainer 
+  .input-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1em;
+    padding: 1.5em;
+    border: 1px solid black;
+    border-radius: 1em;
+    background-color: #3eff3e;
+    width: 22em;
+    margin-top: 1.5em;
+  }
+
+  .ToDoContainer 
+  .input-wrapper-done {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 2em;
+    padding: 1.5em;
+    border: 1px solid black;
+    border-radius: 1em;
+    background-color: yellow;
+    width: 22em;
+    margin-top: 1.5em;
+    text-decoration: line-through;
+  }
+
+  .EditTask {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 2em;
+    padding: 1.5em;
+    border: 1px solid black;
+    border-radius: 1em;
+    background-color: #3eff3e;
+    width: 21em;
+    height: 7em;
+    margin-top: 22em;
+
+    input {
+      width: 15em;
+      height: 3em;
+    }
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .Tasks-container {
+    margin-top: 10em;
+  }
+
+  .App header {
+    font-size: 12px;
+
+    input {
+      width: 12em;
+    }
+
+    button {
+      width: 7em;
+    }
+  }
+
+  .ToDoContainer img {
+    width: 1.3em;
+  }
+
+  .ToDoContainer 
+  .input-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1em;
+    padding: 1.5em;
+    border: 1px solid black;
+    border-radius: 1em;
+    background-color: #3eff3e;
+    width: 13em;
+    margin-top: 1.5em;
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .ToDoContainer 
+  .input-wrapper-done {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 2em;
+    padding: 1.5em;
+    border: 1px solid black;
+    border-radius: 1em;
+    background-color: yellow;
+    width: 13em;
+    margin-top: 1.5em;
+    text-decoration: line-through;
+  }
+
+  .EditTask {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 2em;
+    padding: 1.5em;
+    border: 1px solid black;
+    border-radius: 1em;
+    background-color: #3eff3e;
+    width: 14em;
+    height: 7em;
+    margin-top: 22em;
+
+    input {
+      width: 10em;
+      height: 3em;
+    }
+  }
+
+  .input-wrapper-done p {
+    font-size: 14px;
+  }
+}

@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 const EditTaskComponent = ({ task, setTasks }) => {
-  const { _id, isCheck, text } = task;
   const [inputText, setInputText] = useState(text);
+  const { _id, isCheck, text } = task;
   const navigate = useNavigate();
 
   const saveResultTask = () => {
@@ -16,7 +16,6 @@ const EditTaskComponent = ({ task, setTasks }) => {
       .then((res) => {
         setTasks(res.data.data);
       });
-
     returnFunc();
   };
 

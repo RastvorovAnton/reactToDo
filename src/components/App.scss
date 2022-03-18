@@ -162,7 +162,8 @@ body {
 }
 
 @media screen and (max-width: 603px) {
-  .ToDoContainer .input-wrapper {
+  .ToDoContainer 
+  .input-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -176,7 +177,8 @@ body {
     margin-top: 1.5em;
   }
 
-  .ToDoContainer .input-wrapper-done {
+  .ToDoContainer 
+  .input-wrapper-done {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -233,7 +235,8 @@ body {
     width: 1.3em;
   }
 
-  .ToDoContainer .input-wrapper {
+  .ToDoContainer 
+  .input-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -251,7 +254,8 @@ body {
     }
   }
 
-  .ToDoContainer .input-wrapper-done {
+  .ToDoContainer 
+  .input-wrapper-done {
     display: flex;
     justify-content: center;
     align-items: center;
